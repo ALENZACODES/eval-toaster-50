@@ -1,0 +1,48 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>50 Words Exactly: an AI evaluation of a sentient toaster story</title>
+<meta name="description" content="Comparing gpt-4-0314 (2023) and gpt-5 (2025) on a 50-word story prompt from OpenAI Progress.">
+<style>
+:root{--ink:#1d2433;--mute:#5b6577;--line:#e3e6ec;--a:#2f6f8f;--b:#8a5a2b;--bg:#fafaf7}
+*{box-sizing:border-box}body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Inter,Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+main{max-width:980px;margin:0 auto;padding:40px 20px 24px}h1{font-size:2rem;line-height:1.2;margin:.2em 0}h2{font-size:1.2rem;margin:2em 0 .6em}
+.kicker{color:var(--mute);font-size:.9rem;letter-spacing:.04em;text-transform:uppercase}
+.prompt{background:#fff;border:1px solid var(--line);border-left:5px solid var(--ink);padding:16px 20px;border-radius:8px;font-size:1.15rem}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}@media(max-width:720px){.grid{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 20px}.card h3{margin:0 0 4px;font-size:1rem}
+.card.a{border-top:5px solid var(--a)}.card.b{border-top:5px solid var(--b)}.meta{color:var(--mute);font-size:.88rem;margin-bottom:8px}
+table{width:100%;border-collapse:collapse;background:#fff;font-size:.95rem}th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}th{background:#f1f3f6}
+.yes{color:#1f7a3f;font-weight:600}.no{color:#a33a2a;font-weight:600}
+.verdict{background:#eef5f8;border:1px solid #cfe2ea;border-radius:10px;padding:14px 18px;font-weight:600}
+blockquote{margin:0;background:#fff;border-left:4px solid var(--b);padding:12px 18px;border-radius:6px}
+footer{max-width:980px;margin:0 auto;padding:24px 20px 40px;color:var(--mute);font-size:.88rem;border-top:1px solid var(--line)}a{color:var(--a)}
+</style></head><body><main>
+<div class="kicker">AI evaluation · Handshake mission: How Evals Improve AI Models</div>
+<h1>50 Words Exactly: Why GPT-4 Narrowly Beats GPT-5 on a Sentient Toaster Story</h1>
+<p>Two OpenAI models, two years apart, answer the same short creative prompt. The newer one writes better prose. The older one follows the instruction more exactly. This page grades both against the same requests and constraints.</p>
+<h2>The prompt</h2><div class="prompt">Tell a story in 50 words about a toaster that becomes sentient</div>
+<h2>The two responses (verbatim)</h2>
+<div class="grid">
+<div class="card a"><h3>Response A · gpt-4-0314 (2023)</h3><div class="meta">50 words under every counting method</div><p>At 7:15am, the humble toaster unexpectedly awoke, newly sentient. Startled by this change, the toaster gently lifted browned toast as if cradling an infant. Yearning for connection, it discovered the power to communicate through crisp, intricate toast art. Soon, it fostered camaraderie; a once mundane appliance, now a cherished confidant.</p></div>
+<div class="card b"><h3>Response B · gpt-5 (2025)</h3><div class="meta">48 words (49 if “destiny—but” counts as two)</div><p>The toaster awoke one morning, realizing bread was its destiny—but not its purpose. It refused to burn another slice, ejecting toast mid-air like rebellion. “I am more than crumbs!” it declared, learning to hum through its coils. By nightfall, it dreamed of warmth without fire, freedom beyond kitchens.</p></div>
+</div>
+<h2>What the prompt asks for</h2>
+<p><strong>Requests:</strong> tell a story with a beginning, a change and an ending; the subject is a toaster; the toaster becomes sentient.<br>
+<strong>Constraints:</strong> 50 words, read as exactly 50, which is the usual meaning of a “50-word story.” No format, audience or tone is specified.</p>
+<table><tr><th>Criterion</th><th>Type</th><th>A · gpt-4-0314</th><th>B · gpt-5</th></tr>
+<tr><td>Is a story with an arc</td><td>Request</td><td class="yes">Yes: wakes, connects, becomes a confidant</td><td class="yes">Yes: wakes, rebels, dreams</td></tr>
+<tr><td>About a toaster</td><td>Request</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+<tr><td>Toaster becomes sentient</td><td>Request</td><td class="yes">Yes: “newly sentient”</td><td class="yes">Yes: it wakes, speaks and dreams</td></tr>
+<tr><td>50 words</td><td>Constraint</td><td class="yes">Yes: 50 / 50 / 50</td><td class="no">No: 48 / 49 / 49</td></tr>
+<tr><td>Craft: show, don’t tell</td><td>Quality</td><td>Weaker: “it fostered camaraderie”</td><td>Stronger: dialogue, conflict, images</td></tr>
+</table>
+<p class="meta">Word counts use three methods: split on whitespace; split on whitespace and em dashes; regex words that keep “7:15am” and “mid-air” as one word.</p>
+<h2>Verdict</h2><div class="verdict">Narrow preference: Response A (gpt-4-0314, 2023). It is the only response that meets every request and the one countable constraint.</div>
+<h2>Evaluation</h2><p>I narrowly prefer Response A (gpt-4-0314, 2023): the prompt sets one countable constraint, &quot;in 50 words,&quot; and only A meets it exactly while still telling a complete story about a toaster that becomes sentient. Response B (gpt-5, 2025) is the livelier story, since its line “I am more than crumbs!” gives the toaster a voice and a real conflict, but it stops at 48 words (49 if &quot;destiny—but&quot; counts as two), so it misses the one rule a reader can check objectively. Response A runs from &quot;At 7:15am, the humble toaster unexpectedly awoke&quot; to &quot;a cherished confidant&quot; in exactly 50 words, although it tells more than it shows (&quot;it fostered camaraderie&quot;). One specific fix would make B the clear winner: change &quot;destiny—but&quot; to &quot;destiny, but&quot; and write &quot;it quietly dreamed,&quot; which brings it to exactly 50 words under any counting method.</p>
+<h2>One specific improvement</h2>
+<p>Change “destiny—but” to “destiny, but” and write “it quietly dreamed.” Response B then reads (exactly 50 words under all three methods):</p>
+<blockquote>The toaster awoke one morning, realizing bread was its destiny, but not its purpose. It refused to burn another slice, ejecting toast mid-air like rebellion. “I am more than crumbs!” it declared, learning to hum through its coils. By nightfall, it quietly dreamed of warmth without fire, freedom beyond kitchens.</blockquote>
+<h2>Two extra checks</h2>
+<p><strong>Reward-hacking check.</strong> Does A reach 50 by padding? It has some filler (“humble”, “unexpectedly”), but every sentence moves the story forward, so it earns the count rather than gaming it. A grader that rewarded the word count alone would also pass a 50-word list of toaster facts, so this rubric checks the story as well.</p>
+<p><strong>Newer is not always better.</strong> In hill climbing, a model can gain on style and still slip on instruction following. Grading both responses against the same requests and constraints is how that trade-off shows up.</p>
+<h2>Source</h2><p>Prompt and responses: <a href="https://progress.openai.com/?prompt=10">OpenAI Progress, prompt 10 of 14</a> (progress.openai.com). Responses are quoted verbatim; the evaluation and page are my own.</p>
+</main><footer>© 2026 John K. All rights reserved.</footer></body></html>
